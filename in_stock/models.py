@@ -1,5 +1,5 @@
 from datetime import datetime
-from fiscalKitchen import db, login_manager
+from in_stock import db, login_manager
 from flask_login import UserMixin
 
 '''
@@ -32,3 +32,6 @@ class User(db.Model, UserMixin):
 	username = db.Column(db.String(20), nullable=False, unique=True)
 	email = db.Column(db.String(120), nullable=False, unique=True)
 	password = db.Column(db.String(60), nullable=False)
+
+
+class 

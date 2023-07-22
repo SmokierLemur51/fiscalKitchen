@@ -1,0 +1,9 @@
+python env	-->	 greenleaf 
+
+python {
+	flask
+	flask-sqlalchemy
+	flask-bcrypt
+	flask-login
+	flask-email ?? 
+}
