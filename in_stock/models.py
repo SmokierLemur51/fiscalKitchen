@@ -1,5 +1,5 @@
 from datetime import datetime
-from in_stock import db, login_manager
+from in_stock import db, login_manager, login_manager
 from flask_login import UserMixin
 
 '''
@@ -24,7 +24,7 @@ from flask_login import UserMixin
 
 @login_manager.user_loader
 def load_user(user_id):
-	return User.quey.get(int(user_id))
+	return user
 
 
 class User(db.Model, UserMixin):
@@ -34,4 +34,3 @@ class User(db.Model, UserMixin):
 	password = db.Column(db.String(60), nullable=False)
 
 
-class 

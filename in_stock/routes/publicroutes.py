@@ -1,5 +1,5 @@
 from flask import render_template, url_for, request, redirect
-from in_stock import app, db, login_manager
+from in_stock import app, db, login_manager, load_user
 
 
 
